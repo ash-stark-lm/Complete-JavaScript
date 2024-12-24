@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padhai Likhai</title>
+</head>
+<body style="background-color: black; color: white;">
+    
+</body>
+<script>
+    //creating a div
+    const div=document.createElement('div')
+    console.log(div);
+    div.className="main"
+    div.id=Math.round(Math.random()*10+1)
+    div.setAttribute('title', "generated title")
+    div.style.backgroundColor='orange'
+    div.style.color='white'
+    div.style.padding='10px'
+    div.style.borderRadius='10px'
+    //div.innerText="Hi this is Me"
+    const addText=document.createTextNode("Hi this is me")
+    div.appendChild(addText)
+
+    document.body.appendChild(div)
+
+</script>
+</html>
