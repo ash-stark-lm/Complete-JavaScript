@@ -58,13 +58,13 @@ function displayGuess(guess) {
   guessSlot.innerHTML += `${guess} `
 
   if (numGuess < 10) {
-    numGuess++ // Increment guess count only if it's less than 10
+    numGuess++
   }
 
   if (numGuess === 10) {
-    remaining.innerHTML = `0` // Set remaining guesses to 0 on the 10th guess
-    displayMsg('Game Over!') // Display game over message
-    endGame() // Call endGame to disable further actions
+    remaining.innerHTML = `0`
+    displayMsg('Game Over!')
+    endGame()
   } else {
     remaining.innerHTML = `${10 - numGuess}` // Display remaining guesses
   }
